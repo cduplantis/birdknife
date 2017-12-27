@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
 
-import { expect, assert } from 'chai';
+import { assert } from 'chai';
 import { describe, it } from 'mocha';
 import Location from '../libs/location';
 import Preferences from '../libs/preferences';

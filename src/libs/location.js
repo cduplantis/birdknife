@@ -1,6 +1,6 @@
-import request from 'sync-request';
+// import request from 'sync-request';
 
-const url = 'https://maps.googleapis.com/maps/api/browserlocation/json?browser=birdknife&sensor=true';
+// const url = 'https://maps.googleapis.com/maps/api/browserlocation/json?browser=birdknife&sensor=true';
 
 class Location {
 
