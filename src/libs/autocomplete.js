@@ -21,6 +21,7 @@ class Autocomplete {
         const db = Autocomplete._getDb(word.charAt(0), cache);
         if (!db) return;
 
+        /* eslint-disable no-useless-escape */
         word = word.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
         const re = new RegExp(`^${word}.+`);
 
