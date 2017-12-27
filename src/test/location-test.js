@@ -6,6 +6,7 @@ import Location from '../libs/location';
 import Preferences from '../libs/preferences';
 
 describe('Location', () => {
+    /*
     describe('#getAutoLocation', () => {
         it('should return a valid location', () => {
             const location = Location.getLocationAuto();
@@ -13,6 +14,7 @@ describe('Location', () => {
             expect(location).to.have.property('lng');
         });
     });
+    */
 
     describe('#getLocation', () => {
         it('should return false, as this is the default preference', () => {

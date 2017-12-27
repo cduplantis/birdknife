@@ -9,6 +9,7 @@ class Location {
      *
      * @returns {*}
      */
+    /*
     static getLocationAuto() {
         const res = request('GET', url);
 
@@ -19,6 +20,7 @@ class Location {
 
         return json.location || false;
     }
+    */
 
     /**
      * Get location
