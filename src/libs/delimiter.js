@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved */
 
+import twitter from 'twitter-text';
 import Color from './color-definitions';
 import BirdknifeText from './text';
 
@@ -27,8 +28,8 @@ class Delimiter {
      * @param status
      * @param withMedia
      */
-    updateExplicitCount(status, withMedia) {
-        this.explicitCount = BirdknifeText.getTweetLength(status, withMedia);
+    updateExplicitCount(status) {
+        this.explicitCount = BirdknifeText.getTweetLength(status);
     }
 
     /**
@@ -55,7 +56,7 @@ class Delimiter {
      * @param explicit
      */
     setDefaultDelimiter(ui, explicit) {
-        if (explicit) ui.delimiter(`${PREFIX_EXPLICIT} [140]> `);
+        if (explicit) ui.delimiter(`${PREFIX_EXPLICIT} [${twitter.configs.defaults.maxWeightedTweetLength}]> `);
         else ui.delimiter(`${PREFIX} [---]> `);
     }
 

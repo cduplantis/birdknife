@@ -3673,6 +3673,10 @@ punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
+punycode@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.0.tgz#5f863edc89b96db09074bad7947bf09056ca4e7d"
+
 qs@^6.1.0, qs@~6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
@@ -4439,9 +4443,11 @@ twitter-pin-auth@^0.2.0:
     bluebird "~2.9.14"
     oauth "~0.9.12"
 
-twitter-text@^1.14.1:
-  version "1.14.7"
-  resolved "https://registry.yarnpkg.com/twitter-text/-/twitter-text-1.14.7.tgz#77877342ec61bb0c5397b8163f4d5d31478a40e4"
+twitter-text@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/twitter-text/-/twitter-text-2.0.2.tgz#3d2a3e64e83ad7aca927d72b0f92bcc2f8f33ed8"
+  dependencies:
+    punycode "^2.1.0"
 
 type-check@~0.3.2:
   version "0.3.2"

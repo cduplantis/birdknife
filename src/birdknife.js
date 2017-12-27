@@ -256,7 +256,7 @@ vorpal
     });
 
 const expPrompt = (cmd, cb, dirs, status = '') => {
-    const _c = BirdknifeText.getRemainingTweetLength(status, dirs);
+    const _c = BirdknifeText.getRemainingTweetLength(status);
     const _s = (Delimiter.PAD + _c).slice(-Delimiter.PAD.length);
     return cmd.prompt({
         type: 'input',
@@ -271,7 +271,7 @@ const expPrompt = (cmd, cb, dirs, status = '') => {
             cb();
         } else if (result.tweet !== '/send') {
             status += '\n' + result.tweet;
-            delimiter.updateExplicitCount(status, dirs);
+            delimiter.updateExplicitCount(status);
             expPrompt(cmd, cb, dirs, status);
         }
     });
@@ -289,8 +289,8 @@ vorpal
             Color.yellow(' to return to the main prompt.')
         );
 
-        delimiter.updateExplicitCount('', args.dirs);
-        expPrompt(vorpal.activeCommand, callback, args.dirs);
+        delimiter.updateExplicitCount('');
+        expPrompt(vorpal.activeCommand, callback);
     });
 
 vorpal

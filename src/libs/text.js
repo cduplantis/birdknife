@@ -18,8 +18,9 @@ class BirdknifeText {
      * @param withMedia
      * @returns {number}
      */
-    static getRemainingTweetLength(status, withMedia) {
-        return 140 - BirdknifeText.getTweetLength(status, withMedia);
+    static getRemainingTweetLength(status) {
+        return twitter.configs.defaults.maxWeightedTweetLength -
+            BirdknifeText.getTweetLength(status);
     }
 
     /**
@@ -29,8 +30,8 @@ class BirdknifeText {
      * @param withMedia
      * @return {number}
      */
-    static getTweetLength(status, withMedia) {
-        return twitter.getTweetLength(status) + (withMedia ? 24 : 0);
+    static getTweetLength(status) {
+        return twitter.getTweetLength(status);
     }
 
     /**
