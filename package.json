@@ -48,7 +48,7 @@
     "twitter-pin-auth": "^0.2.0",
     "twitter-text": "^2.0.2",
     "update-notifier": "^2.3.0",
-    "vorpal": "^1.11.4",
+    "vorpal": "^1.12.0",
     "vorpal-autocomplete-fs": "0.0.3"
   },
   "preferGlobal": true,

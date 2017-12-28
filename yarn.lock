@@ -4688,7 +4688,7 @@ vorpal-autocomplete-fs@0.0.3:
     chalk "^1.1.1"
     strip-ansi "^3.0.0"
 
-vorpal@^1.11.4:
+vorpal@^1.12.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/vorpal/-/vorpal-1.12.0.tgz#4be7b2a4e48f8fcfc9cf3648c419d311c522159d"
   dependencies:
