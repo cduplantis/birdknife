@@ -5,7 +5,7 @@
 import _ from 'lodash';
 import Vorpal from 'vorpal';
 import vorpalAutocomplete from 'vorpal-autocomplete-fs';
-import Update from 'update-notifier';
+import updateNotifier from 'update-notifier';
 import DataStore from 'nedb';
 import Delimiter from './libs/delimiter';
 import TwitterAPI from './libs/twitter-api';
@@ -356,7 +356,7 @@ vorpal.history('birdknife');
 
 vorpal.log(`Welcome to birdknife! (${pkg.version})`);
 
-new Update({ pkg, updateCheckInterval: 1000 * 60 * 60 * 24 /* every day */ }).notify();
+updateNotifier({ pkg, updateCheckInterval: 1000 * 60 * 60 * 24 /* every day */ }).notify();
 
 new Timer(vorpal, preferences).start();
 
