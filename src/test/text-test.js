@@ -3,7 +3,7 @@
 import { expect, assert } from 'chai';
 import { describe, it } from 'mocha';
 import BirdknifeText from '../libs/text';
-import DummyStatus from '../../assets/DummyStatus';
+import DummyStatus from './DummyStatus';
 
 describe('BirdknifeText', () => {
     describe('#isCommand', () => {

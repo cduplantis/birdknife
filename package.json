@@ -56,19 +56,16 @@
     "birdknife": "./lib/birdknife.js"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.0",
-    "chai": "^3.5.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.1.2",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
+    "gulp-babel": "^7.0.0",
     "gulp-clean": "^0.3.2",
-    "gulp-mocha": "^3.0.1",
-    "gulp-xo": "^0.14.0",
-    "mocha": "^3.0.2"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
+    "gulp-mocha": "^4.3.1",
+    "gulp-xo": "^0.16.0",
+    "mocha": "^4.0.1"
   },
   "xo": {
     "space": 4,
