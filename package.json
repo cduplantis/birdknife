@@ -39,7 +39,7 @@
     "columnify": "^1.5.4",
     "html-entities": "^1.2.0",
     "lodash": "^4.17.1",
-    "nconf": "^0.8.4",
+    "nconf": "^0.10.0",
     "nedb": "^1.8.0",
     "node-notifier": "^4.6.1",
     "node-schedule": "^1.2.0",
